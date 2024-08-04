@@ -1,0 +1,206 @@
+.red-box {
+    width: 100%;
+    height: 30px;
+    background-color:#787878;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+    background-color: #333;
+}
+.slides {
+    display: flex;
+}
+.slide {
+    flex: 0 0 100%;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+.slider img {
+    
+    border-radius: 5px;
+}
+/* Keyframes for animation */
+@keyframes slide-animation {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+/* Additional styles for controlling slide animation */
+.slides {
+    animation: slide-animation 10s infinite;
+}
+.slide {
+    opacity: 1;
+}
+header {
+    background-color:#3d3d3d;
+    ;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    max-width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown-menu li {
+    margin: 5px 0;
+}
+
+.dropdown-menu a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 40px;
+}
+
+.dropdown-menu a:hover {
+    text-decoration: underline;
+}
+footer {
+    background-color: #3d3d3d;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0 ;
+
+    bottom: 0;
+    width: 100%;
+    height: 210px;
+}
+.social-media img{
+    border-radius: 100%;
+    max-width: 50px;
+}
+footer .logo img {
+    max-width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+
+}
+
+.social-media {
+    margin-bottom: 20px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+.banner {
+    position: relative;
+    height: 400px; /* Adjust as needed */
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.banner-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.banner-text p {
+    font-size: 18px;
+}
+.products {
+    background-color: #D9D9D9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.product-card {
+    display: inline-block;
+    width: 150px;
+    margin: 0 20px;
+    padding: 20px;
+    border: 1px solid#000000;
+    border-radius: 5px;
+    margin: 20px;
+}
+a{
+    color: black;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    margin-top: 0;
+}
+
+.product-card p {
+    margin-bottom: 20px;
+}
